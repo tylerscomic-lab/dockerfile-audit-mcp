@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.tylerscomic-lab/dockerfile-audit-mcp",
+  "title": "Dockerfile Security Audit",
+  "description": "Audits Dockerfiles for missing USER instructions, baked-in secrets, curl-pipe-shell patterns, and unpinned base images.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/tylerscomic-lab/dockerfile-audit-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://dockerfile-audit-mcp.mcpize.run/mcp"
+    }
+  ]
+}

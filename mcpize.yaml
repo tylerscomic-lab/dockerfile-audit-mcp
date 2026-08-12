@@ -1,0 +1,13 @@
+version: 1
+name: dockerfile-audit-mcp
+description: Audits Dockerfiles for missing USER instructions, credentials baked into ENV/ARG, curl-pipe-shell patterns, unpinned :latest base images, and remote-URL ADD instructions. Handles multi-stage builds correctly (only the final shipped stage's USER matters).
+runtime: typescript
+entry: server.js
+build:
+  install: npm install
+startCommand:
+  type: http
+  command: node server.js
+  port: 8080
+  healthCheck: /health
+  mcpPath: /mcp

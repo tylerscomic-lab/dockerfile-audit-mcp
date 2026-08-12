@@ -1,0 +1,12 @@
+{
+  "name": "dockerfile-audit-mcp",
+  "version": "1.0.0",
+  "description": "Audits Dockerfiles for missing USER instructions, credentials baked into ENV/ARG, curl-pipe-shell patterns, unpinned base images, and remote-URL ADD instructions",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.4.3"
+  }
+}
